@@ -10,8 +10,8 @@
 </head>
 <body>
 
-<header>
-    <nav href="/meetups" > <a> DjangoMeetups </a> </nav>
+<header id="main-header">
+    <nav href="/meetups" id="main-logo"> <a> DjangoMeetups </a> </nav>
     <h1> We've got great meetups coming ! </h1>
     <p> Find the one that best suits your needs ! </p>
 </header>
@@ -20,15 +20,15 @@
     <section>
         <h2> Upcoming meetups ! </h2>
         <ol>
-            {% for meetup_item in items %}
+            {% for meetup_item in meetups %}
 
-            <li class="meetup_item">
+            <li class="meetup-item">
                 <article>
                     <div class="meetup-summary">
-                        <div class="meetup_image">
+                        <div class="meetup-image">
                             <img src="" alt="">
                         </div>
-                        <div class="meetup_details">
+                        <div class="meetup-details">
                             <h3>{{ meetup_item.title }}</h3>
                             <address>{{ meetup_item.location }}</address>
                         </div>
