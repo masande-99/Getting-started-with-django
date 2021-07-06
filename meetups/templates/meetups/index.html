@@ -1,10 +1,10 @@
+{% extends 'meetups/base/base.html
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>All meetups</title>
+{% block title %}All meetups{% endblock %}
+
+{% block site_css %}
     <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
+{% endblock %}
     <link rel="stylesheet" href="{% static 'meetups/styles/all-meetups.css' %}">
 
 </head>
