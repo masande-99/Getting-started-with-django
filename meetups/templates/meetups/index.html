@@ -22,7 +22,7 @@ We've got great meetups coming !
         <ol>
             {% for meetup_item in meetups %}
 
-            {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title image=meetup_item.image.url title=meetup_item.description location="Cape town" slug=meetup_item.slug %}
+            {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title description=meetup_item.description image=meetup_item.image.url location="Cape town" slug=meetup_item.slug %}
             {% endfor %}
         </ol>
     </section>
